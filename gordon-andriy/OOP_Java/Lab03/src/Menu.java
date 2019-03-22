@@ -73,7 +73,7 @@ public class Menu {
                     PersonToFind personToFind = new PersonToFind(sex1, age, eyeColor, hobby1, music);
 
                     Bureau.Client client = new Bureau.Client(lonelyPerson, LocalDate.now().getYear(),
-                            LocalDate.now().getMonthValue() + 1, LocalDate.now().getDayOfMonth(),
+                            LocalDate.now().getMonthValue(), LocalDate.now().getDayOfMonth(),
                             personToFind);
 
                     bureau.add(client);
