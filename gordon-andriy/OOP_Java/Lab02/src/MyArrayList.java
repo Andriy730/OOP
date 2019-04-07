@@ -86,6 +86,7 @@ public class MyArrayList implements MyList<String>, Serializable {
             data[j] = data[j+1];
         }
         size--;
+        arraindex--;
         return true;
     }
 
@@ -94,6 +95,8 @@ public class MyArrayList implements MyList<String>, Serializable {
         for(int j = index; j < data.length - 1; j++){
             data[j] = data[j+1];
         }
+        size--;
+        arrindex--;
         return true;
     }
 
